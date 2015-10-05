@@ -1,0 +1,6 @@
+Id,Name,Address,Phone,Mail,TK,Text,Hospital,MedicalCenter,EOPYY,CONTACT
+1,Λαικό,"Αγίου Θωμά",2101231234,123@123,11525,,True,False,True,
+2,Ωνάσειο,"Λ.Συγγρού 132",,-,,,True,False,True,
+3,ΡΙΟ,"Πανεπιστημιακό Νοσοκομείο Πάτρα",,,,,True,,True,
+8,Ευαγγελισμός," ",,,,,True,,True,
+100,CHU,Nantes,,,,,True,,,

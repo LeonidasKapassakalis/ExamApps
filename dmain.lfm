@@ -1,0 +1,3687 @@
+inherited DataModule1: TDataModule1
+  OnCreate = DataModuleCreate
+  Height = 600
+  HorizontalOffset = 288
+  VerticalOffset = 129
+  Width = 799
+  object qryDates: TSQLQuery[0]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'PeopleId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DoctorId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'LocationId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end    
+      item
+        Name = 'ExamUpdated'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamUpdatedDT'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamPosted'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamPostedDT'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryDatesAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnCalcFields = qryDatesCalcFields
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From Dates'
+      'Order By Date'
+      '-- Comment --'
+    )
+    Params = <>
+    left = 32
+    top = 24
+    object qryDatesid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryDatesDate: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Date'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesPeopleId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'PeopleId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LIsPatientSurname: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'LIsPatientSurname'
+      Index = 3
+      KeyFields = 'PeopleId'
+      LookupCache = True
+      LookupDataSet = qryV_IsPatient
+      LookupKeyFields = 'Id'
+      LookupResultField = 'CNameSurnameBirth'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryDatesLocationId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'LocationId'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object LName: TStringField
+      DisplayWidth = 30
+      FieldKind = fkLookup
+      FieldName = 'LName'
+      Index = 5
+      KeyFields = 'LocationId'
+      LookupCache = True
+      LookupDataSet = qryLocations
+      LookupKeyFields = 'Id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryDatesDoctorId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DoctorId'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LIsDoctorSurname: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LIsDoctorSurname'
+      Index = 7
+      KeyFields = 'DoctorId'
+      LookupCache = True
+      LookupDataSet = qryV_IsDoctor
+      LookupKeyFields = 'Id'
+      LookupResultField = 'Surname'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesComments: TStringField
+      DisplayWidth = 250
+      FieldKind = fkData
+      FieldName = 'Comments'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 250
+    end
+    object qryDatesExamUpdated: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'ExamUpdated'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryDatesExamUpdatedDT: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamUpdatedDT'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamPosted: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'ExamPosted'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryDatesExamPostedDT: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamPostedDT'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesCDatePatient: TStringField
+      DisplayWidth = 100
+      FieldKind = fkCalculated
+      FieldName = 'CDatePatient'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsDates: TDataSource[1]
+    AutoEdit = False
+    DataSet = qryDates
+    OnStateChange = dtsDatesStateChange
+    left = 32
+    top = 96
+  end
+  object qryDatesDetail: TSQLQuery[2]
+    OnUpdateError = qryDatesDetailUpdateError
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DatesId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'SchemaId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryDatesDetailAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnDeleteError = qryDatesDetailDeleteError
+    OnEditError = qryDatesDetailEditError
+    OnPostError = qryDatesDetailPostError
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From DatesDetail'
+    )
+    Params = <>
+    left = 120
+    top = 24
+    object qryDatesDetailid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object DateTimeField1: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkLookup
+      FieldName = 'Date'
+      Index = 1
+      KeyFields = 'DatesId'
+      LookupCache = False
+      LookupDataSet = qryDates
+      LookupKeyFields = 'id'
+      LookupResultField = 'Date'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      OnChange = qryDatesDetailDatesIdChange
+    end
+    object qryDatesDetailDatesId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DatesId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      OnChange = qryDatesDetailDatesIdChange
+    end
+    object qryDatesDetailAA: TLongintField
+      ConstraintErrorMessage = 'Required'
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnChange = qryDatesDetailDatesIdChange
+    end
+    object qryDatesDetailSchemaId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'SchemaId'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      OnChange = qryDatesDetailDatesIdChange
+    end
+    object StringField2: TStringField
+      DisplayWidth = 150
+      FieldKind = fkLookup
+      FieldName = 'Name'
+      Index = 5
+      KeyFields = 'SchemaId'
+      LookupCache = False
+      LookupDataSet = qryExamSchema
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      OnChange = qryDatesDetailDatesIdChange
+      Size = 150
+    end
+    object StringField1: TStringField
+      DisplayWidth = 250
+      FieldKind = fkLookup
+      FieldName = 'Comments'
+      Index = 6
+      KeyFields = 'DatesId'
+      LookupCache = False
+      LookupDataSet = qryDates
+      LookupKeyFields = 'id'
+      LookupResultField = 'Comments'
+      ProviderFlags = []
+      ReadOnly = True
+      Required = False
+      OnChange = qryDatesDetailDatesIdChange
+      Size = 250
+    end
+  end
+  object dtsDatesDetail: TDataSource[3]
+    AutoEdit = False
+    DataSet = qryDatesDetail
+    OnStateChange = dtsDatesStateChange
+    left = 120
+    top = 96
+  end
+  object qryExamSchema: TSQLQuery[4]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'Sequence'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end>
+    AfterPost = qryExamSchemaAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnNewRecord = qryExamSchemaNewRecord
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select  "id", "Name", "Sequence", "Notes" From ExamSchema'
+    )
+    Params = <>
+    UpdateMode = upWhereAll
+    left = 208
+    top = 24
+    object qryExamSchemaid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamSchemaName: TStringField
+      DisplayWidth = 150
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object qryExamSchemaSequence: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Sequence'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryExamSchemaNotes: TStringField
+      DisplayWidth = 150
+      FieldKind = fkData
+      FieldName = 'Notes'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+  end
+  object dtsExamSchema: TDataSource[5]
+    AutoEdit = False
+    DataSet = qryExamSchema
+    OnStateChange = dtsDatesStateChange
+    left = 208
+    top = 96
+  end
+  object qryLocations: TSQLQuery[6]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Address'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'Phone'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'Mail'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'TK'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 5
+      end    
+      item
+        Name = 'Text'
+        DataType = ftString
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'Hospital'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MedicalCenter'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'EOPYY'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'CONTACT'
+        DataType = ftFixedWideChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'CountryId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From Locations'
+    )
+    Params = <>
+    left = 32
+    top = 184
+    object qryLocationsId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryLocationsName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryLocationsAddress: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'Address'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryLocationsPhone: TStringField
+      DisplayWidth = 60
+      FieldKind = fkData
+      FieldName = 'Phone'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryLocationsMail: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Mail'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryLocationsTK: TStringField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'TK'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 5
+    end
+    object qryLocationsText: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'Text'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryLocationsHospital: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Hospital'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryLocationsMedicalCenter: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'MedicalCenter'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryLocationsEOPYY: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'EOPYY'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryLocationsCONTACT: TWideStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'CONTACT'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsLocations: TDataSource[7]
+    AutoEdit = False
+    DataSet = qryLocations
+    OnStateChange = dtsDatesStateChange
+    left = 32
+    top = 256
+  end
+  object qryExamName: TSQLQuery[8]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'GroupExam_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MM_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Min'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Max'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end    
+      item
+        Name = 'Is_Numeric'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Is_Text'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Is_Memo'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryExamNameAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From ExamName'
+      ''
+    )
+    Params = <>
+    left = 120
+    top = 184
+    object SQLQuery1id1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object SQLQuery1Name1: TStringField
+      DisplayLabel = 'Ονομασία'
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryExamNameSName: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object GroupExamName: TStringField
+      DisplayLabel = 'Κατ.'
+      DisplayWidth = 15
+      FieldKind = fkLookup
+      FieldName = 'LGroupExamName'
+      Index = 3
+      KeyFields = 'GroupExam_Id'
+      LookupCache = True
+      LookupDataSet = qryGroupExam
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object qryExamNameGroupExam_Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExam_Id'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object LMMSName: TStringField
+      DisplayLabel = 'MM'
+      DisplayWidth = 8
+      FieldKind = fkLookup
+      FieldName = 'LMMSName'
+      Index = 5
+      KeyFields = 'MM_Id'
+      LookupCache = True
+      LookupDataSet = qryMM
+      LookupKeyFields = 'id'
+      LookupResultField = 'SName'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object qryExamNameMM_Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MM_Id'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryExamNameMin: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Min'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryExamNameMax: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Max'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryExamNameComments: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Comments'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryExamNameIs_Numeric: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Is_Numeric'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryExamNameIs_Text: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Is_Text'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryExamNameIs_Memo: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Is_Memo'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+  end
+  object dtsExamName: TDataSource[9]
+    AutoEdit = False
+    DataSet = qryExamName
+    OnStateChange = dtsDatesStateChange
+    left = 120
+    top = 256
+  end
+  object qryExamSchemaDet: TSQLQuery[10]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamSchemaid'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'GroupExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryExamSchemaAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnNewRecord = qryExamSchemaNewRecord
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select  * From ExamSchemaDet'
+    )
+    Params = <>
+    UpdateMode = upWhereAll
+    left = 216
+    top = 184
+    object qryExamSchemaDetid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamSchemaDetExamSchemaid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamSchemaid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamSchemaDetGroupExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamSchemaDetAA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LSchemaName: TStringField
+      DisplayWidth = 150
+      FieldKind = fkLookup
+      FieldName = 'LSchemaName'
+      Index = 4
+      KeyFields = 'ExamSchemaid'
+      LookupCache = True
+      LookupDataSet = qryExamSchema
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object LGroupExamName: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'LGroupName'
+      Index = 5
+      KeyFields = 'GroupExamid'
+      LookupCache = True
+      LookupDataSet = qryGroupExam
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsExamSchemaDet: TDataSource[11]
+    AutoEdit = False
+    DataSet = qryExamSchemaDet
+    OnStateChange = dtsDatesStateChange
+    left = 208
+    top = 256
+  end
+  object qryMM: TSQLQuery[12]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'SName'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From MM'
+    )
+    Params = <>
+    left = 296
+    top = 184
+    object qryMMid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryMMName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryMMSName: TStringField
+      DisplayWidth = 8
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+  end
+  object dtsMM: TDataSource[13]
+    AutoEdit = False
+    DataSet = qryMM
+    OnStateChange = dtsDatesStateChange
+    left = 296
+    top = 256
+  end
+  object qryGroupMM: TSQLQuery[14]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'SName'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From GroupMM'
+    )
+    Params = <>
+    left = 376
+    top = 184
+    object qryGroupMMid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupMMName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupMMSName: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsGroupMM: TDataSource[15]
+    AutoEdit = False
+    DataSet = qryGroupMM
+    OnStateChange = dtsDatesStateChange
+    left = 376
+    top = 256
+  end
+  object qryGroupExam: TSQLQuery[16]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From GroupExam'
+    )
+    Params = <>
+    left = 456
+    top = 184
+    object qryGroupExamid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamName: TStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryGroupExamSName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dtsGroupExam: TDataSource[17]
+    AutoEdit = False
+    DataSet = qryGroupExam
+    OnStateChange = dtsDatesStateChange
+    left = 456
+    top = 256
+  end
+  object qryPeople: TSQLQuery[18]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DateOfBirth'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Nationality'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CountryId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IdOnContry'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Phone'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Fax'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Mail'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'IsPatient'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IsDoctor'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'CanLogin'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AccessOnlyHisFile'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'Photo'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From People'
+    )
+    Params = <>
+    left = 368
+    top = 24
+    object qryPeopleId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleName: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryPeopleSurname: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleDateOfBirth: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateOfBirth'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleNationality: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Nationality'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleIdOnContry: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'IdOnContry'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeoplePhone: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Phone'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleFax: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Fax'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleMail: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Mail'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleIsPatient: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsPatient'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleIsDoctor: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsDoctor'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleCanLogin: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'CanLogin'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleAccessOnlyHisFile: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'AccessOnlyHisFile'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleNotes: TStringField
+      DisplayWidth = 8192
+      FieldKind = fkData
+      FieldName = 'Notes'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 8192
+    end
+    object qryPeoplePhoto: TBlobField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Photo'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      BlobType = ftBlob
+    end
+    object qryPeopleCountryId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'CountryId'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LCountryName: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LCountryName'
+      Index = 16
+      KeyFields = 'CountryId'
+      LookupCache = False
+      LookupDataSet = qryCountry
+      LookupKeyFields = 'Id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsPeople: TDataSource[19]
+    AutoEdit = False
+    DataSet = qryPeople
+    OnStateChange = dtsDatesStateChange
+    OnDataChange = dtsPeopleDataChange
+    left = 368
+    top = 96
+  end
+  object qryDatesExamLog: TSQLQuery[20]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DateId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_N'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_T'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Updated'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From DatesExamLog'
+    )
+    Params = <>
+    left = 456
+    top = 24
+    object qryDatesExamLogId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogDateId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LExamNameDates: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'LExamNameDates'
+      Index = 3
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object LExamSNameDates: TStringField
+      DisplayWidth = 15
+      FieldKind = fkLookup
+      FieldName = 'LExamSName'
+      Index = 4
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'SName'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryDatesExamLogMMId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LMMNameDates: TStringField
+      DisplayWidth = 50
+      FieldKind = fkLookup
+      FieldName = 'LMMName'
+      Index = 6
+      KeyFields = 'MMId'
+      LookupCache = True
+      LookupDataSet = qryMM
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryDatesExamLogResult_N: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Result_N'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryDatesExamLogResult_T: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Result_T'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogUpdated: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Updated'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object StringField9: TStringField
+      DisplayWidth = 255
+      FieldKind = fkLookup
+      FieldName = 'Full'
+      Index = 10
+      KeyFields = 'DateId'
+      LookupCache = False
+      LookupDataSet = qryDates1
+      LookupKeyFields = 'id'
+      LookupResultField = 'Full'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object LongintField1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkLookup
+      FieldName = 'GroupExam_Id'
+      Index = 11
+      KeyFields = 'ExamId'
+      LookupCache = False
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'GroupExam_Id'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsDatesExamLog: TDataSource[21]
+    AutoEdit = False
+    DataSet = qryDatesExamLog
+    OnStateChange = dtsDatesStateChange
+    left = 456
+    top = 96
+  end
+  object qryV_DatesExamLogFull: TSQLQuery[22]
+    FieldDefs = <    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DateId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'PeopleId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name:1'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'Name:2'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'SName:1'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_N'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_T'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Min'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Max'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MM.Name_MINMAX'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'MM.SName_MINMAX'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'id:1'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From V_DatesExamLogFull'
+    )
+    Params = <>
+    left = 616
+    top = 24
+    object qryV_DatesExamLogFullName: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryV_DatesExamLogFullSurname: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryV_DatesExamLogFullDate: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Date'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullDateId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateId'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullPeopleId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'PeopleId'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullName1: TStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'Name:1'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryV_DatesExamLogFullSName: TStringField
+      DisplayWidth = 15
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryV_DatesExamLogFullName2: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name:2'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryV_DatesExamLogFullSName1: TStringField
+      DisplayWidth = 8
+      FieldKind = fkData
+      FieldName = 'SName:1'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object qryV_DatesExamLogFullMMId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullResult_N: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Result_N'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryV_DatesExamLogFullResult_T: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Result_T'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullMin: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Min'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryV_DatesExamLogFullMax: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Max'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryV_DatesExamLogFullMMName_MINMAX: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'MM.Name_MINMAX'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryV_DatesExamLogFullMMSName_MINMAX: TStringField
+      DisplayWidth = 8
+      FieldKind = fkData
+      FieldName = 'MM.SName_MINMAX'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object qryV_DatesExamLogFullid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_DatesExamLogFullid1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id:1'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsV_DatesExamLogFull: TDataSource[23]
+    AutoEdit = False
+    DataSet = qryV_DatesExamLogFull
+    OnStateChange = dtsDatesStateChange
+    left = 616
+    top = 104
+  end
+  object qryDates1: TSQLQuery[24]
+    FieldDefs = <    
+      item
+        Name = 'Name'
+        DataType = ftFixedWideChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedWideChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DateOfBirth'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftWideString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'Location.Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Address'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'Phone'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'Full'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end>
+    AfterPost = qryDatesAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From V_Dates2'
+    )
+    Params = <>
+    left = 560
+    top = 184
+    object qryDates1Name: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryDates1Surname: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryDates1DateOfBirth: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateOfBirth'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDates1id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDates1Date: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Date'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDates1Comments: TStringField
+      DisplayWidth = 250
+      FieldKind = fkData
+      FieldName = 'Comments'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 250
+    end
+    object qryDates1LocationName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Location.Name'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryDates1Address: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'Address'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryDates1Phone: TStringField
+      DisplayWidth = 60
+      FieldKind = fkData
+      FieldName = 'Phone'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryDates1Full: TStringField
+      DisplayWidth = 255
+      FieldKind = fkData
+      FieldName = 'Full'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+  end
+  object dtsDates1: TDataSource[25]
+    AutoEdit = False
+    DataSet = qryDates1
+    OnStateChange = dtsDatesStateChange
+    left = 560
+    top = 256
+  end
+  object qryGroupExamDet: TSQLQuery[26]
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'GroupExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From GroupExamDet'
+    )
+    Params = <>
+    left = 40
+    top = 336
+    object qryGroupExamDetid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetGroupExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExamId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetAA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object StringField10: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'Name'
+      Index = 4
+      KeyFields = 'GroupExamId'
+      LookupCache = True
+      LookupDataSet = qryGroupExam
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object StringField11: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'Name1'
+      Index = 5
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object StringField12: TStringField
+      DisplayWidth = 15
+      FieldKind = fkLookup
+      FieldName = 'SName'
+      Index = 6
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'SName'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object dtsGroupExamDet: TDataSource[27]
+    AutoEdit = False
+    DataSet = qryGroupExamDet
+    OnStateChange = dtsDatesStateChange
+    OnDataChange = dtsGroupExamDetDataChange
+    left = 40
+    top = 408
+  end
+  object CSVExporter1: TCSVExporter[28]
+    ExportFields = <>
+    FromCurrent = False
+    RestorePosition = True
+    FormatSettings.DecimalSeparator = #0
+    FormatSettings.CurrencyDigits = 0
+    FormatSettings.FieldDelimiter = ','
+    FormatSettings.QuoteStrings = [qsSpace, qsDelimiter]
+    FormatSettings.StringQuoteChar = '"'
+    left = 149
+    top = 519
+  end
+  object XMLXSDExporter1: TXMLXSDExporter[29]
+    ExportFields = <>
+    FromCurrent = False
+    RestorePosition = True
+    FormatSettings.DecimalSeparator = #0
+    FormatSettings.CurrencyDigits = 0
+    FormatSettings.CreateXSD = False
+    FormatSettings.ExportFormat = AccessCompatible
+    left = 240
+    top = 519
+  end
+  object RTFExporter1: TRTFExporter[30]
+    Dataset = qryExamName
+    ExportFields = <    
+      item
+        FieldName = 'id'
+        ExportedName = 'id'
+        Width = 0
+        Align = taLeftJustify
+        LineBefore = False
+        LineAfter = False
+      end    
+      item
+        FieldName = 'Name'
+        ExportedName = 'Name'
+        Width = 0
+        Align = taLeftJustify
+        LineBefore = False
+        LineAfter = False
+      end    
+      item
+        FieldName = 'SName'
+        ExportedName = 'SName'
+        Width = 0
+        Align = taLeftJustify
+        LineBefore = False
+        LineAfter = False
+      end>
+    FromCurrent = False
+    RestorePosition = True
+    FormatSettings.DecimalSeparator = #0
+    FormatSettings.CurrencyDigits = 0
+    FormatSettings.BooleanTrue = '1'
+    FormatSettings.BooleanFalse = '0'
+    FormatSettings.Options = [reHeaderRow, reTopLine, reBottomLine]
+    OnExportRow = RTFExporter1ExportRow
+    left = 317
+    top = 519
+  end
+  object FixedLengthExporter1: TFixedLengthExporter[31]
+    ExportFields = <>
+    RestorePosition = False
+    FormatSettings.DecimalSeparator = #0
+    FormatSettings.CurrencyDigits = 0
+    left = 56
+    top = 519
+  end
+  object qryExamMinMax: TSQLQuery[32]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MFA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MinValue'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MaxValue'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryExamNameAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From ExamMinMax'
+    )
+    Params = <>
+    left = 144
+    top = 336
+    object qryExamMinMaxId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamMinMaxExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamMinMaxMFA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MFA'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamMinMaxMinValue: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MinValue'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryExamMinMaxMaxValue: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MaxValue'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object StringField4: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LExamName'
+      Index = 5
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object LExamSName: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LExamSName'
+      Index = 6
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'SName'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamMinMaxMMId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LMMName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkLookup
+      FieldName = 'LMMName'
+      Index = 8
+      KeyFields = 'MMId'
+      LookupCache = False
+      LookupDataSet = qryMM
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dtsExamMinMax: TDataSource[33]
+    AutoEdit = False
+    DataSet = qryExamMinMax
+    OnStateChange = dtsDatesStateChange
+    left = 144
+    top = 408
+  end
+  object qryMFA: TSQLQuery[34]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'FromAge'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ToAge'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'SEX'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryExamNameAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From MFA'
+    )
+    Params = <>
+    left = 224
+    top = 336
+    object qryMFAId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryMFAFromAge: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'FromAge'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryMFAToAge: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ToAge'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryMFASEX: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'SEX'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsMFA: TDataSource[35]
+    AutoEdit = False
+    DataSet = qryMFA
+    OnStateChange = dtsDatesStateChange
+    left = 224
+    top = 408
+  end
+  object qryCountry: TSQLQuery[36]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Abbr'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 2
+      end>
+    AfterPost = qryExamNameAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From Country'
+    )
+    Params = <>
+    left = 296
+    top = 344
+    object qryCountryId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryCountryName: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryCountryAbbr: TStringField
+      DisplayWidth = 2
+      FieldKind = fkData
+      FieldName = 'Abbr'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+  end
+  object dtsCountry: TDataSource[37]
+    AutoEdit = False
+    DataSet = qryCountry
+    OnStateChange = dtsDatesStateChange
+    left = 296
+    top = 416
+  end
+  object qryV_IsPatient: TSQLQuery[38]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DateOfBirth'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Nationality'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CountryId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IdOnContry'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Phone'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Fax'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Mail'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'IsPatient'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IsDoctor'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'CanLogin'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AccessOnlyHisFile'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'Photo'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnCalcFields = qryV_IsPatientCalcFields
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From V_IsPatient'
+    )
+    Params = <>
+    left = 456
+    top = 336
+    object qryPeopleId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleName1: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryPeopleSurname1: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleDateOfBirth1: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateOfBirth'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleNationality1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Nationality'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleIdOnContry1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'IdOnContry'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeoplePhone1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Phone'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleFax1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Fax'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleMail1: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Mail'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleIsPatient1: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsPatient'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleIsDoctor1: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsDoctor'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleCanLogin1: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'CanLogin'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleAccessOnlyHisFile1: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'AccessOnlyHisFile'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleNotes1: TStringField
+      DisplayWidth = 8192
+      FieldKind = fkData
+      FieldName = 'Notes'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 8192
+    end
+    object qryPeoplePhoto1: TBlobField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Photo'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      BlobType = ftBlob
+    end
+    object qryPeopleCountryId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'CountryId'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LCountryName1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LCountryName'
+      Index = 16
+      KeyFields = 'CountryId'
+      LookupCache = False
+      LookupDataSet = qryCountry
+      LookupKeyFields = 'Id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_IsPatientCNameSurnameBirth1: TStringField
+      DisplayWidth = 100
+      FieldKind = fkCalculated
+      FieldName = 'CNameSurnameBirth'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsV_IsPatient: TDataSource[39]
+    AutoEdit = False
+    DataSet = qryV_IsPatient
+    OnStateChange = dtsDatesStateChange
+    left = 456
+    top = 408
+  end
+  object qryV_IsDoctor: TSQLQuery[40]
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DateOfBirth'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Nationality'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CountryId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IdOnContry'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Phone'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Fax'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Mail'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'IsPatient'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'IsDoctor'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'CanLogin'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AccessOnlyHisFile'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'Photo'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    OnCalcFields = qryV_IsDoctorCalcFields
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From V_IsDoctor'
+    )
+    Params = <>
+    left = 560
+    top = 336
+    object qryPeopleId2: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleName2: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryPeopleSurname2: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleDateOfBirth2: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateOfBirth'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleNationality2: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Nationality'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleIdOnContry2: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'IdOnContry'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeoplePhone2: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Phone'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleFax2: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Fax'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPeopleMail2: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Mail'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryPeopleIsPatient2: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsPatient'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleIsDoctor2: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'IsDoctor'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleCanLogin2: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'CanLogin'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleAccessOnlyHisFile2: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'AccessOnlyHisFile'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryPeopleNotes2: TStringField
+      DisplayWidth = 8192
+      FieldKind = fkData
+      FieldName = 'Notes'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      Size = 8192
+    end
+    object qryPeoplePhoto2: TBlobField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Photo'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      BlobType = ftBlob
+    end
+    object qryPeopleCountryId2: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'CountryId'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LCountryName2: TStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'LCountryName'
+      Index = 16
+      KeyFields = 'CountryId'
+      LookupCache = False
+      LookupDataSet = qryCountry
+      LookupKeyFields = 'Id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+    end
+    object qryV_IsDoctorCNameSurnameBirth1: TStringField
+      DisplayWidth = 100
+      FieldKind = fkCalculated
+      FieldName = 'CNameSurnameBirth'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsV_IsDoctor: TDataSource[41]
+    AutoEdit = False
+    DataSet = qryV_IsDoctor
+    OnStateChange = dtsDatesStateChange
+    left = 560
+    top = 408
+  end
+  object qryDatesExamLog1: TSQLQuery[42]
+    FieldDefs = <    
+      item
+        Name = 'GroupExam_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DateId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_N'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_T'
+        DataType = ftWideString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Updated'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end>
+    AfterPost = qryLocationsAfterPost
+    BeforeDelete = qryDatesBeforeDelete
+    BeforePost = qryBeforePost
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From VUpdDatesExamLog'
+    )
+    Params = <>
+    left = 680
+    top = 184
+    object qryDatesExamLogId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogDateId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogExamId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LExamNameDates1: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'LExamNameDates'
+      Index = 3
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object LExamSNameDates1: TStringField
+      DisplayWidth = 15
+      FieldKind = fkLookup
+      FieldName = 'LExamSName'
+      Index = 4
+      KeyFields = 'ExamId'
+      LookupCache = True
+      LookupDataSet = qryExamName
+      LookupKeyFields = 'id'
+      LookupResultField = 'SName'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryDatesExamLogMMId1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object LMMNameDates1: TStringField
+      DisplayWidth = 50
+      FieldKind = fkLookup
+      FieldName = 'LMMName'
+      Index = 6
+      KeyFields = 'MMId'
+      LookupCache = True
+      LookupDataSet = qryMM
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryDatesExamLogResult_N1: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Result_N'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryDatesExamLogResult_T1: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Result_T'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamLogUpdated1: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Updated'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object StringField13: TStringField
+      DisplayWidth = 255
+      FieldKind = fkLookup
+      FieldName = 'Full'
+      Index = 10
+      KeyFields = 'DateId'
+      LookupCache = False
+      LookupDataSet = qryDates1
+      LookupKeyFields = 'id'
+      LookupResultField = 'Full'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object StringField3: TStringField
+      DisplayWidth = 100
+      FieldKind = fkLookup
+      FieldName = 'Name'
+      Index = 11
+      KeyFields = 'GroupExam_Id'
+      LookupCache = False
+      LookupDataSet = qryGroupExam
+      LookupKeyFields = 'id'
+      LookupResultField = 'Name'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryDatesExamLog1GroupExam_Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExam_Id'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsDatesExamLog1: TDataSource[43]
+    AutoEdit = False
+    DataSet = qryDatesExamLog1
+    OnStateChange = dtsDatesStateChange
+    left = 680
+    top = 256
+  end
+end

@@ -1,0 +1,783 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el_GR\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: globals.notaphst
+msgid "#196#229#237 #225#246#239#241#220 #208#235#229#233#243#244#231#241#233#225#243#236#252 !"
+msgstr ""
+
+#: globals.rsadatabaseerr
+msgctxt "globals.rsadatabaseerr"
+msgid "A database error has occurred. Technical error message: "
+msgstr ""
+
+#: globals.rserror
+msgctxt "globals.rserror"
+msgid "Error"
+msgstr "Σφάλμα!"
+
+#: globals.rserrorinfield
+msgctxt "globals.rserrorinfield"
+msgid "Error In Field Update"
+msgstr "Σφάλμα κατά την ενημέρωση του πεδίου"
+
+#: globals.rsgeneralexception
+msgctxt "globals.rsgeneralexception"
+msgid "General Exception Trap"
+msgstr "Γενική εξαίρεση παγίδα"
+
+#: globals.rsquestion
+msgctxt "globals.rsquestion"
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: globals.rsstillinediti
+msgctxt "globals.rsstillinediti"
+msgid "Still in Edit/Insert State"
+msgstr "Ακόμα σε κατάσταση επεξεργασίας/εισαγωγή"
+
+#: gresources.notaphst
+msgid "Δεν αφορά Πλειστηριασμό !"
+msgstr ""
+
+#: gresources.rsadatabaseerr
+msgctxt "gresources.rsadatabaseerr"
+msgid "A database error has occurred. Technical error message: "
+msgstr "Παρουσιάστηκε ένα σφάλμα βάσης δεδομένων. Τεχνικό λάθος μήνυμα:"
+
+#: gresources.rserror
+msgctxt "gresources.rserror"
+msgid "Error"
+msgstr "Σφάλμα!"
+
+#: gresources.rserrorinfield
+msgctxt "gresources.rserrorinfield"
+msgid "Error In Field Update"
+msgstr "Σφάλμα κατά την ενημέρωση του πεδίου"
+
+#: gresources.rsgeneralexception
+msgctxt "gresources.rsgeneralexception"
+msgid "General Exception Trap"
+msgstr "Γενική εξαίρεση παγίδα"
+
+#: gresources.rsquestion
+msgctxt "gresources.rsquestion"
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: gresources.rsstillinediti
+msgctxt "gresources.rsstillinediti"
+msgid "Still in Edit/Insert State"
+msgstr "Ακόμα σε κατάσταση επεξεργασίας/εισαγωγή"
+
+#: tform1.actallcolumns.caption
+msgctxt "TFORM1.ACTALLCOLUMNS.CAPTION"
+msgid "All"
+msgstr ""
+
+#: tform1.actbottom.caption
+msgctxt "TFORM1.ACTBOTTOM.CAPTION"
+msgid "actBottom"
+msgstr ""
+
+#: tform1.actbrowse.caption
+msgctxt "TFORM1.ACTBROWSE.CAPTION"
+msgid "Ενέργεις"
+msgstr ""
+
+#: tform1.actbrowse20.caption
+msgctxt "TFORM1.ACTBROWSE20.CAPTION"
+msgid "Μετακίνηση"
+msgstr ""
+
+#: tform1.actcancel.caption
+msgctxt "TFORM1.ACTCANCEL.CAPTION"
+msgid "actCancel"
+msgstr ""
+
+#: tform1.actdelete.caption
+msgctxt "TFORM1.ACTDELETE.CAPTION"
+msgid "Delete"
+msgstr ""
+
+#: tform1.actedit.caption
+msgctxt "TFORM1.ACTEDIT.CAPTION"
+msgid "Ενέργεια"
+msgstr ""
+
+#: tform1.actedt.caption
+msgctxt "TFORM1.ACTEDT.CAPTION"
+msgid "Edit"
+msgstr ""
+
+#: tform1.actexport.caption
+msgctxt "TFORM1.ACTEXPORT.CAPTION"
+msgid "Export"
+msgstr ""
+
+#: tform1.actgrdet.caption
+msgctxt "TFORM1.ACTGRDET.CAPTION"
+msgid "actGrDet"
+msgstr "actGrDet"
+
+#: tform1.actinsert.caption
+msgctxt "TFORM1.ACTINSERT.CAPTION"
+msgid "actInsert"
+msgstr ""
+
+#: tform1.action1.caption
+msgctxt "TFORM1.ACTION1.CAPTION"
+msgid "Action1"
+msgstr ""
+
+#: tform1.actnext.caption
+msgctxt "TFORM1.ACTNEXT.CAPTION"
+msgid "actNext"
+msgstr ""
+
+#: tform1.actnonecolumn.caption
+msgctxt "TFORM1.ACTNONECOLUMN.CAPTION"
+msgid "None"
+msgstr ""
+
+#: tform1.actpost.caption
+msgctxt "TFORM1.ACTPOST.CAPTION"
+msgid "actPost"
+msgstr ""
+
+#: tform1.actprev.caption
+msgctxt "TFORM1.ACTPREV.CAPTION"
+msgid "actPrev"
+msgstr ""
+
+#: tform1.actprintgrid.caption
+msgctxt "TFORM1.ACTPRINTGRID.CAPTION"
+msgid "actPrintGrid"
+msgstr ""
+
+#: tform1.actretvalue.caption
+msgctxt "TFORM1.ACTRETVALUE.CAPTION"
+msgid "actRetValue"
+msgstr ""
+
+#: tform1.actsave.caption
+msgctxt "TFORM1.ACTSAVE.CAPTION"
+msgid "actSave"
+msgstr ""
+
+#: tform1.acttop.caption
+msgctxt "TFORM1.ACTTOP.CAPTION"
+msgid "actTop"
+msgstr ""
+
+#: tform1.caption
+msgid "Form1"
+msgstr ""
+
+#: tform1.mensep.caption
+msgctxt "TFORM1.MENSEP.CAPTION"
+msgid "-"
+msgstr ""
+
+#: tform1.menuitem15.caption
+msgctxt "TFORM1.MENUITEM15.CAPTION"
+msgid "Φίλτρο"
+msgstr ""
+
+#: tform1.menuitem16.caption
+msgctxt "TFORM1.MENUITEM16.CAPTION"
+msgid "Ακύρωση Φίλτρου"
+msgstr ""
+
+#: tform1.menuitem17.caption
+msgctxt "TFORM1.MENUITEM17.CAPTION"
+msgid "Εμφανιση Φίλτρου"
+msgstr ""
+
+#: tform1.menuitem18.caption
+msgid "Εξαγωγή"
+msgstr ""
+
+#: tform1.menuitem20.caption
+msgctxt "TFORM1.MENUITEM20.CAPTION"
+msgid "-"
+msgstr ""
+
+#: tform1.menuitem23.caption
+msgid "Ταξινόμηση"
+msgstr ""
+
+#: tform1.menuitem24.caption
+msgid "Φίλτρο 2"
+msgstr ""
+
+#: tform1.menuitem25.caption
+msgid "Εκτύπωση"
+msgstr ""
+
+#: tform1.menuitem26.caption
+msgid "Export Excel"
+msgstr ""
+
+#: tform1.panel1.caption
+msgctxt "TFORM1.PANEL1.CAPTION"
+msgid "Panel1"
+msgstr ""
+
+#: tform1.pedia.caption
+msgctxt "TFORM1.PEDIA.CAPTION"
+msgid "Πεδία"
+msgstr ""
+
+#: tform1.tabsheet1.caption
+msgid "Grid"
+msgstr ""
+
+#: tform1.tabsheet2.caption
+msgid "Detail"
+msgstr ""
+
+#: tform1.toolbar1.caption
+msgctxt "TFORM1.TOOLBAR1.CAPTION"
+msgid "ToolBar1"
+msgstr ""
+
+#: tfrmbaseform.actallcolumns.caption
+msgctxt "tfrmbaseform.actallcolumns.caption"
+msgid "All"
+msgstr ""
+
+#: tfrmbaseform.actbottom.caption
+msgctxt "tfrmbaseform.actbottom.caption"
+msgid "actBottom"
+msgstr ""
+
+#: tfrmbaseform.actbrowse.caption
+msgctxt "tfrmbaseform.actbrowse.caption"
+msgid "Ενέργεις"
+msgstr ""
+
+#: tfrmbaseform.actbrowse2.caption
+msgctxt "tfrmbaseform.actbrowse2.caption"
+msgid "Μετακίνηση"
+msgstr ""
+
+#: tfrmbaseform.actcancel.caption
+msgctxt "tfrmbaseform.actcancel.caption"
+msgid "actCancel"
+msgstr ""
+
+#: tfrmbaseform.actdelete.caption
+msgctxt "tfrmbaseform.actdelete.caption"
+msgid "Delete"
+msgstr ""
+
+#: tfrmbaseform.actedit.caption
+msgctxt "tfrmbaseform.actedit.caption"
+msgid "Ενέργεια"
+msgstr ""
+
+#: tfrmbaseform.actedt.caption
+msgctxt "tfrmbaseform.actedt.caption"
+msgid "Edit"
+msgstr ""
+
+#: tfrmbaseform.actexport.caption
+msgctxt "tfrmbaseform.actexport.caption"
+msgid "Export"
+msgstr ""
+
+#: tfrmbaseform.actgrdet.caption
+msgctxt "tfrmbaseform.actgrdet.caption"
+msgid "actGrDet"
+msgstr "actGrDet"
+
+#: tfrmbaseform.actinsert.caption
+msgctxt "tfrmbaseform.actinsert.caption"
+msgid "actInsert"
+msgstr ""
+
+#: tfrmbaseform.action1.caption
+msgctxt "tfrmbaseform.action1.caption"
+msgid "Action1"
+msgstr ""
+
+#: tfrmbaseform.actnext.caption
+msgctxt "tfrmbaseform.actnext.caption"
+msgid "actNext"
+msgstr ""
+
+#: tfrmbaseform.actnonecolumn.caption
+msgctxt "tfrmbaseform.actnonecolumn.caption"
+msgid "None"
+msgstr ""
+
+#: tfrmbaseform.actpost.caption
+msgctxt "tfrmbaseform.actpost.caption"
+msgid "actPost"
+msgstr ""
+
+#: tfrmbaseform.actprev.caption
+msgctxt "tfrmbaseform.actprev.caption"
+msgid "actPrev"
+msgstr ""
+
+#: tfrmbaseform.actprintgrid.caption
+msgctxt "tfrmbaseform.actprintgrid.caption"
+msgid "actPrintGrid"
+msgstr ""
+
+#: tfrmbaseform.actretvalue.caption
+msgctxt "tfrmbaseform.actretvalue.caption"
+msgid "actRetValue"
+msgstr ""
+
+#: tfrmbaseform.actsave.caption
+msgctxt "tfrmbaseform.actsave.caption"
+msgid "actSave"
+msgstr ""
+
+#: tfrmbaseform.acttop.caption
+msgctxt "tfrmbaseform.acttop.caption"
+msgid "actTop"
+msgstr ""
+
+#: tfrmbaseform.button1.caption
+msgctxt "tfrmbaseform.button1.caption"
+msgid "Button1"
+msgstr ""
+
+#: tfrmbaseform.button2.caption
+msgctxt "tfrmbaseform.button2.caption"
+msgid "Button2"
+msgstr ""
+
+#: tfrmbaseform.caption
+msgid "FrmBaseForm"
+msgstr ""
+
+#: tfrmbaseform.exportgrid.caption
+msgid "Export Grid"
+msgstr ""
+
+#: tfrmbaseform.menuitem15.caption
+msgctxt "tfrmbaseform.menuitem15.caption"
+msgid "Φίλτρο"
+msgstr ""
+
+#: tfrmbaseform.menuitem16.caption
+msgctxt "tfrmbaseform.menuitem16.caption"
+msgid "Ακύρωση Φίλτρου"
+msgstr ""
+
+#: tfrmbaseform.menuitem17.caption
+msgctxt "tfrmbaseform.menuitem17.caption"
+msgid "Εμφανιση Φίλτρου"
+msgstr ""
+
+#: tfrmbaseform.menuitem20.caption
+msgctxt "tfrmbaseform.menuitem20.caption"
+msgid "-"
+msgstr ""
+
+#: tfrmbaseform.panel1.caption
+msgctxt "tfrmbaseform.panel1.caption"
+msgid "Panel1"
+msgstr ""
+
+#: tfrmbaseform.pedia.caption
+msgctxt "tfrmbaseform.pedia.caption"
+msgid "Πεδία"
+msgstr ""
+
+#: tfrmbaseform.pnlbottom.caption
+msgid "pnlBottom"
+msgstr ""
+
+#: tfrmbaseform.pnlmiddle.caption
+msgid "pnlMiddle"
+msgstr ""
+
+#: tfrmbaseform.pnltop.caption
+msgid "pnlTop"
+msgstr ""
+
+#: tfrmbaseform.printgrid.caption
+msgid "Print Grid"
+msgstr ""
+
+#: tfrmbaseform.sortgrid.caption
+msgid "SortGrid"
+msgstr ""
+
+#: tfrmbaseform.tabsheet1.caption
+msgctxt "tfrmbaseform.tabsheet1.caption"
+msgid "TabSheet1"
+msgstr ""
+
+#: tfrmbaseform.tabsheet2.caption
+msgctxt "tfrmbaseform.tabsheet2.caption"
+msgid "TabSheet2"
+msgstr ""
+
+#: tfrmbaseform.tabsheet3.caption
+msgctxt "tfrmbaseform.tabsheet3.caption"
+msgid "TabSheet3"
+msgstr ""
+
+#: tfrmbaseform.tabsheet4.caption
+msgid "TabSheet4"
+msgstr ""
+
+#: tfrmfilteren.btnaccept.caption
+msgctxt "tfrmfilteren.btnaccept.caption"
+msgid "OK"
+msgstr ""
+
+#: tfrmfilteren.caption
+msgctxt "TFRMFILTEREN.CAPTION"
+msgid "Φίλτρο"
+msgstr ""
+
+#: tfrmfilteren.tabshmain.caption
+msgid "Main"
+msgstr ""
+
+#: tfrmfilteren2.btnaccept.caption
+msgctxt "tfrmfilteren2.btnaccept.caption"
+msgid "OK"
+msgstr ""
+
+#: tfrmfilteren2.caption
+msgctxt "TFRMFILTEREN2.CAPTION"
+msgid "Φίλτρο"
+msgstr ""
+
+#: tfrmform3.button1.caption
+msgctxt "TFRMFORM3.BUTTON1.CAPTION"
+msgid "Button1"
+msgstr ""
+
+#: tfrmform3.button2.caption
+msgctxt "TFRMFORM3.BUTTON2.CAPTION"
+msgid "Button2"
+msgstr ""
+
+#: tfrmform3.caption
+msgid "FrmForm3"
+msgstr ""
+
+#: tfrmmain.actdates.caption
+msgid "Ημερομηνίες"
+msgstr ""
+
+#: tfrmmain.actdates.hint
+msgid "dtsDates"
+msgstr ""
+
+#: tfrmmain.actdatesdetail.caption
+msgid "Ημερομηνίες Ανάλυση"
+msgstr ""
+
+#: tfrmmain.actdatesdetail.hint
+msgid "dtsDatesDetail"
+msgstr ""
+
+#: tfrmmain.actdatesexamlog.caption
+msgid "Ανάλυση Αποτελεσμάτων Εξετάσεων"
+msgstr ""
+
+#: tfrmmain.actdatesexamlog.hint
+msgid "dtsDatesExamLog"
+msgstr ""
+
+#: tfrmmain.actdatesexamlog1.caption
+msgid "DatesExamLog1"
+msgstr ""
+
+#: tfrmmain.actdatesexamlog1.hint
+msgid "dtsDatesExamLog1"
+msgstr ""
+
+#: tfrmmain.actexamminmax.caption
+#, fuzzy
+#| msgid "actExamMinMax"
+msgid "Εξετάσεις Min/Max"
+msgstr "actExamMinMax"
+
+#: tfrmmain.actexamminmax.hint
+msgid "dtsExamMinMax"
+msgstr ""
+
+#: tfrmmain.actexamname.caption
+msgid "Εξετάσεις"
+msgstr ""
+
+#: tfrmmain.actexamname.hint
+msgid "dtsExamName"
+msgstr ""
+
+#: tfrmmain.actexamschema.caption
+msgid "Σχήμα Εξετάσεων"
+msgstr ""
+
+#: tfrmmain.actexamschema.hint
+msgid "dtsExamSchema"
+msgstr ""
+
+#: tfrmmain.actgroupexam.caption
+msgid "Ομάδες Εξετάσεων"
+msgstr ""
+
+#: tfrmmain.actgroupexam.hint
+msgid "dtsGroupExam"
+msgstr ""
+
+#: tfrmmain.actgroupexamdet.caption
+msgid "Ομάδες Εξετάσεων Ανάλυση"
+msgstr ""
+
+#: tfrmmain.actgroupexamdet.hint
+msgid "dtsGroupExamDet"
+msgstr ""
+
+#: tfrmmain.action1.caption
+msgctxt "TFRMMAIN.ACTION1.CAPTION"
+msgid "Action1"
+msgstr ""
+
+#: tfrmmain.action2.caption
+msgid "Action2"
+msgstr ""
+
+#: tfrmmain.action3.caption
+msgid "FormBase2"
+msgstr "FormBase2"
+
+#: tfrmmain.actlocations.caption
+msgid "Σημεία"
+msgstr ""
+
+#: tfrmmain.actlocations.hint
+msgid "dtsLocations"
+msgstr ""
+
+#: tfrmmain.actmfa.caption
+msgid "MFA"
+msgstr ""
+
+#: tfrmmain.actmfa.hint
+msgid "dtsMFA"
+msgstr ""
+
+#: tfrmmain.actmm.caption
+msgid "Μονάδες Μέτρησης"
+msgstr ""
+
+#: tfrmmain.actmm.hint
+msgid "dtsMM"
+msgstr ""
+
+#: tfrmmain.actpeople.caption
+msgid "Ανθρωποι"
+msgstr ""
+
+#: tfrmmain.actpeople.hint
+msgid "dtsPeople"
+msgstr ""
+
+#: tfrmmain.actpopdates.caption
+msgid "actPopDates"
+msgstr ""
+
+#: tfrmmain.actpopdatesexams.caption
+msgid "actPopDatesExams"
+msgstr ""
+
+#: tfrmmain.actspecialmenu.caption
+msgid "actSpecialMenu"
+msgstr ""
+
+#: tfrmmain.actv_datesexamlogfull.caption
+msgid "actV_DatesExamLogFull"
+msgstr ""
+
+#: tfrmmain.actv_datesexamlogfull.hint
+msgid "dtsV_DatesExamLogFull"
+msgstr ""
+
+#: tfrmmain.bdontshowmsg.caption
+msgid "bDontShowMsg"
+msgstr ""
+
+#: tfrmmain.button1.caption
+msgctxt "TFRMMAIN.BUTTON1.CAPTION"
+msgid "Button100"
+msgstr ""
+
+#: tfrmmain.button2.caption
+msgctxt "TFRMMAIN.BUTTON2.CAPTION"
+msgid "Button2"
+msgstr ""
+
+#: tfrmmain.button3.caption
+msgid "Button3"
+msgstr ""
+
+#: tfrmmain.button4.caption
+msgid "Button4"
+msgstr ""
+
+#: tfrmmain.button5.caption
+msgid "Button5"
+msgstr ""
+
+#: tfrmmain.calendardialog1.cancelcaption
+msgid "Cancel"
+msgstr ""
+
+#: tfrmmain.calendardialog1.okcaption
+msgid "&OK"
+msgstr ""
+
+#: tfrmmain.calendardialog1.title
+msgid "Pick the right one."
+msgstr ""
+
+#: tfrmmain.caption
+msgid "Exam"
+msgstr ""
+
+#: tfrmmain.chkdisplayendid.caption
+msgid "chkDisplayEndId"
+msgstr ""
+
+#: tfrmmain.chkdisplayid.caption
+msgid "chkDisplayId"
+msgstr ""
+
+#: tfrmmain.chknotlog1.caption
+msgid "chkNotLog1"
+msgstr ""
+
+#: tfrmmain.chknotlog2.caption
+msgid "chkNotLog2"
+msgstr ""
+
+#: tfrmmain.edit1.text
+msgid "Edit1"
+msgstr ""
+
+#: tfrmmain.examschemadet.caption
+msgid "Σχήμα Εξετάσεων Ανάλυση"
+msgstr ""
+
+#: tfrmmain.examschemadet.hint
+msgid "dtsExamSchemaDet"
+msgstr ""
+
+#: tfrmmain.groupmm.caption
+msgid "Ομάδες ΜΜ"
+msgstr ""
+
+#: tfrmmain.groupmm.hint
+msgid "dtsGroupMM"
+msgstr ""
+
+#: tfrmmain.klinklabel1.caption
+msgid "KLinkLabel1"
+msgstr ""
+
+#: tfrmmain.menuitem1.caption
+msgid "Αρχεία"
+msgstr ""
+
+#: tfrmmain.menuitem13.caption
+msgctxt "TFRMMAIN.MENUITEM13.CAPTION"
+msgid "All"
+msgstr ""
+
+#: tfrmmain.menuitem14.caption
+msgctxt "TFRMMAIN.MENUITEM14.CAPTION"
+msgid "None"
+msgstr ""
+
+#: tfrmmain.menuitem15.caption
+msgid "XOr"
+msgstr ""
+
+#: tfrmmain.menuitem18.caption
+msgid "New Item15"
+msgstr ""
+
+#: tfrmmain.menuitem19.caption
+msgid "New Item16"
+msgstr ""
+
+#: tfrmmain.mintrunlength.text
+msgid "90"
+msgstr ""
+
+#: tfrmmain.panel1.caption
+msgctxt "TFRMMAIN.PANEL1.CAPTION"
+msgid "Panel1"
+msgstr ""
+
+#: tfrmmain.tabsheet1.caption
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "TabSheet1"
+msgstr ""
+
+#: tfrmmain.tabsheet2.caption
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "TabSheet2"
+msgstr ""
+
+#: tfrmmain.tabsheet3.caption
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "TabSheet3"
+msgstr ""
+
+#: tfrmmain.toolbar1.caption
+msgctxt "tfrmmain.toolbar1.caption"
+msgid "ToolBar1"
+msgstr ""
+
+#: tfrmmain.trunlen.text
+msgid "30"
+msgstr ""
+
+#: tfrmstat001.button2.caption
+msgctxt "TFRMSTAT001.BUTTON2.CAPTION"
+msgid "Button2"
+msgstr ""
+
+#: tfrmstat001.caption
+msgid "FrmStat001"
+msgstr ""
+
+#: tfrmstat001.tabsheet1.caption
+msgctxt "TFRMSTAT001.TABSHEET1.CAPTION"
+msgid "TabSheet1"
+msgstr ""
+
+#: tfrmstat001.tabsheet2.caption
+msgctxt "TFRMSTAT001.TABSHEET2.CAPTION"
+msgid "TabSheet2"
+msgstr ""
+
+#: tfrmstat001.tabsheet3.caption
+msgctxt "TFRMSTAT001.TABSHEET3.CAPTION"
+msgid "TabSheet3"
+msgstr ""
+

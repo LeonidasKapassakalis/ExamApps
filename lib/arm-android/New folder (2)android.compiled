@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="j:\laztoapk\downloads\laz4android\fpc\3.1.1\bin\i386-win32\fpc.exe" Date="1180263284"/>
+  <Params Value=" -Tandroid -Parm -MObjFPC -Scghi -O1 -l -vewnhibq &quot;-FiJ:\lazarus\Source\New folder (2)\lib\arm-android&quot; -FlJ:\laztoapk\downloads\android-ndk-r10c\platforms\android-12\arch-arm\usr\lib -Fuj:\laztoapk\downloads\laz4android\lcl\units\arm-android\customdrawn -Fuj:\laztoapk\downloads\laz4android\lcl\units\arm-android -Fuj:\laztoapk\downloads\laz4android\components\lazutils\lib\arm-android -Fuj:\laztoapk\downloads\laz4android\packager\units\arm-android &quot;-FuJ:\lazarus\Source\New folder (2)\&quot; &quot;-FUJ:\lazarus\Source\New folder (2)\lib\arm-android\&quot; &quot;-FEJ:\lazarus\Source\New folder (2)\android\libs\armeabi\&quot; -oliblclapp.so -dLCL -dLCLcustomdrawn -dANDROID -Xd -CpARMV6 &quot;New folder (2)android.lpr&quot;"/>
+  <Complete Value="False"/>
+</CONFIG>

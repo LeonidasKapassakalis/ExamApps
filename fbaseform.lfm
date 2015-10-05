@@ -1,0 +1,962 @@
+object FrmBaseForm: TFrmBaseForm
+  Left = 323
+  Height = 582
+  Top = 187
+  Width = 783
+  Caption = 'FrmBaseForm'
+  ClientHeight = 582
+  ClientWidth = 783
+  OnCreate = FormCreate
+  OnShow = FormActivate
+  LCLVersion = '1.2.6.0'
+  object pnlMiddle: TPanel
+    Left = 0
+    Height = 462
+    Top = 50
+    Width = 783
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'pnlMiddle'
+    ClientHeight = 462
+    ClientWidth = 783
+    TabOrder = 0
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 462
+      Top = 0
+      Width = 783
+      ActivePage = TabSheet1
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 0
+      object TabSheet1: TTabSheet
+        Caption = 'TabSheet1'
+        ClientHeight = 436
+        ClientWidth = 775
+        object DBGrid1: TDBGrid
+          Left = 0
+          Height = 436
+          Top = 0
+          Width = 775
+          Align = alClient
+          AutoEdit = False
+          Color = clWindow
+          Columns = <>
+          DataSource = dtsDatesDetail
+          PopupMenu = popFilter
+          TabOrder = 0
+          TitleFont.Height = -12
+          TitleFont.Name = 'Arial Narrow'
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'TabSheet2'
+        ClientHeight = 431
+        ClientWidth = 775
+        object Panel1: TPanel
+          Left = 0
+          Height = 431
+          Top = 0
+          Width = 775
+          Align = alClient
+          AutoSize = True
+          Caption = 'Panel1'
+          TabOrder = 0
+        end
+      end
+      object TabSheet3: TTabSheet
+        Caption = 'TabSheet3'
+        ClientHeight = 431
+        ClientWidth = 775
+        object Chart1: TChart
+          Left = 0
+          Height = 375
+          Top = 56
+          Width = 775
+          AxisList = <          
+            item
+              Minors = <>
+              Title.LabelFont.Orientation = 900
+            end          
+            item
+              Alignment = calBottom
+              Minors = <>
+            end>
+          Foot.Brush.Color = clBtnFace
+          Foot.Font.Color = clBlue
+          Title.Brush.Color = clBtnFace
+          Title.Font.Color = clBlue
+          Title.Text.Strings = (
+            'TAChart'
+          )
+          Align = alClient
+          ParentColor = False
+          object Chart1BarSeries1: TBarSeries
+            BarBrush.Color = clRed
+            Source = DbChartSource1
+          end
+          object Chart1LineSeries1: TLineSeries
+            Active = False
+            Source = DbChartSource1
+          end
+          object Chart1PieSeries1: TPieSeries
+            Active = False
+            Source = DbChartSource1
+          end
+        end
+        object ChartListbox1: TChartListbox
+          Left = 0
+          Height = 56
+          Top = 0
+          Width = 775
+          Chart = Chart1
+          Align = alTop
+          Columns = 3
+          ItemHeight = 0
+          TabOrder = 1
+        end
+      end
+      object TabSheet4: TTabSheet
+        Caption = 'TabSheet4'
+        ClientHeight = 436
+        ClientWidth = 775
+        object clb: TCheckListBox
+          Left = 40
+          Height = 358
+          Top = 40
+          Width = 260
+          ItemHeight = 0
+          PopupMenu = frmMain.popupClb
+          TabOrder = 0
+        end
+        object clb1: TCheckListBox
+          Left = 376
+          Height = 358
+          Top = 40
+          Width = 260
+          ExtendedSelect = False
+          ItemHeight = 0
+          PopupMenu = frmMain.popupClb
+          TabOrder = 1
+        end
+        object Button1: TButton
+          Left = 688
+          Height = 25
+          Top = 47
+          Width = 75
+          Caption = 'Button1'
+          OnClick = Button1Click
+          TabOrder = 2
+        end
+        object Button2: TButton
+          Left = 688
+          Height = 25
+          Top = 88
+          Width = 75
+          Caption = 'Button2'
+          OnClick = Button2Click
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 50
+    Top = 512
+    Width = 783
+    Align = alBottom
+    Caption = 'pnlBottom'
+    TabOrder = 1
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 783
+    Align = alTop
+    Caption = 'pnlTop'
+    TabOrder = 2
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 20
+    Top = 562
+    Width = 783
+    Panels = <>
+  end
+  object ActionList1: TActionList
+    left = 56
+    top = 128
+    object actPrev: TAction
+      Category = 'ctBrowse'
+      Caption = 'actPrev'
+      ImageIndex = 7
+      ShortCut = 16464
+    end
+    object actNext: TAction
+      Category = 'ctBrowse'
+      Caption = 'actNext'
+      ImageIndex = 4
+      ShortCut = 16462
+    end
+    object actTop: TAction
+      Category = 'ctBrowse'
+      Caption = 'actTop'
+      ImageIndex = 5
+      ShortCut = 16468
+    end
+    object actBottom: TAction
+      Category = 'ctBrowse'
+      Caption = 'actBottom'
+      ImageIndex = 6
+      ShortCut = 16450
+    end
+    object actInsert: TAction
+      Category = 'ctBrowse'
+      Caption = 'actInsert'
+      ImageIndex = 1
+      ShortCut = 16429
+    end
+    object actPost: TAction
+      Category = 'ctEdit'
+      Caption = 'actPost'
+      ImageIndex = 19
+      ShortCut = 8237
+    end
+    object actCancel: TAction
+      Category = 'ctEdit'
+      Caption = 'actCancel'
+      ImageIndex = 9
+      ShortCut = 27
+    end
+    object actPrintGrid: TAction
+      Category = 'ctBrowse'
+      Caption = 'actPrintGrid'
+      ImageIndex = 20
+      ShortCut = 49232
+    end
+    object actBrowse: TAction
+      Category = 'ctBrowse'
+      Caption = 'Ενέργεις'
+    end
+    object actEdit: TAction
+      Category = 'ctEdit'
+      Caption = 'Ενέργεια'
+    end
+    object actBrowse2: TAction
+      Category = 'ctBrowse'
+      Caption = 'Μετακίνηση'
+    end
+    object actGrDet: TAction
+      Category = 'ctBrowse'
+      Caption = 'actGrDet'
+      ShortCut = 114
+    end
+    object actEdt: TAction
+      Category = 'ctBrowse'
+      Caption = 'Edit'
+      ImageIndex = 12
+    end
+    object actDelete: TAction
+      Category = 'ctBrowse'
+      Caption = 'Delete'
+      ImageIndex = 22
+    end
+    object actExport: TAction
+      Category = 'ctBrowse'
+      Caption = 'Export'
+    end
+    object actRetValue: TAction
+      Category = 'ctBrowse'
+      Caption = 'actRetValue'
+    end
+    object Action1: TAction
+      Category = 'ctBrowse'
+      Caption = 'Action1'
+    end
+    object actSave: TAction
+      Category = 'ctBrowse'
+      Caption = 'actSave'
+      ImageIndex = 8
+    end
+  end
+  object popFilter: TPopupMenu
+    OnPopup = popFilterPopup
+    left = 144
+    top = 128
+    object MenuItem15: TMenuItem
+      Caption = 'Φίλτρο'
+      OnClick = MenuItem15Click
+    end
+    object MenuItem16: TMenuItem
+      Caption = 'Ακύρωση Φίλτρου'
+      OnClick = MenuItem16Click
+    end
+    object MenuItem17: TMenuItem
+      Caption = 'Εμφανιση Φίλτρου'
+      OnClick = MenuItem17Click
+    end
+    object Pedia: TMenuItem
+      Caption = 'Πεδία'
+      object actAllColumns: TMenuItem
+        Caption = 'All'
+        OnClick = actAllColumnsClick
+      end
+      object actNoneColumn: TMenuItem
+        Caption = 'None'
+        OnClick = actNoneColumnClick
+      end
+      object MenuItem20: TMenuItem
+        Caption = '-'
+      end
+    end
+    object PrintGrid: TMenuItem
+      Caption = 'Print Grid'
+      OnClick = PrintGridClick
+    end
+    object ExportGrid: TMenuItem
+      Caption = 'Export Grid'
+      OnClick = ExportGridClick
+    end
+    object SortGrid: TMenuItem
+      Caption = 'SortGrid'
+      OnClick = SortGridClick
+    end
+  end
+  object qryGroupExamDet: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DateId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'PeopleId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name:1'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Name:2'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'SName:1'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_N'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_T'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Min'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Max'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MM.Name_MINMAX'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'MM.SName_MINMAX'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'id:1'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From V_DatesExamLogFull'
+      ''
+    )
+    Params = <>
+    left = 420
+    top = 64
+    object qryGroupExamDetName: TStringField
+      DisplayWidth = 30
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryGroupExamDetSurname: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Surname'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupExamDetDate: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Date'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetDateId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateId'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetPeopleId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'PeopleId'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetName1: TStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'Name:1'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryGroupExamDetSName: TStringField
+      DisplayWidth = 15
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryGroupExamDetName2: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Name:2'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupExamDetSName1: TStringField
+      DisplayWidth = 8
+      FieldKind = fkData
+      FieldName = 'SName:1'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object qryGroupExamDetMMId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetResult_N: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Result_N'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryGroupExamDetResult_T: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Result_T'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetMin: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Min'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryGroupExamDetMax: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Max'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object qryGroupExamDetMMName_MINMAX: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'MM.Name_MINMAX'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupExamDetMMSName_MINMAX: TStringField
+      DisplayWidth = 8
+      FieldKind = fkData
+      FieldName = 'MM.SName_MINMAX'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object qryGroupExamDetid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupExamDetid1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id:1'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object DbChartSource1: TDbChartSource
+    DataSource = dtsDatesDetail
+    FieldText = 'SName'
+    FieldX = 'DateId'
+    FieldY = 'Result_N'
+    left = 508
+    top = 68
+  end
+  object qryExamName: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'GroupExam_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MM_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Min'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Max'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From ExamName'
+    )
+    Params = <>
+    left = 636
+    top = 68
+    object qryExamNameid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryExamNameName: TStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dtsDatesDetail: TDataSource
+    AutoEdit = False
+    DataSet = qryGroupExamDet
+    left = 420
+    top = 132
+  end
+  object dtsExamName: TDataSource
+    AutoEdit = False
+    DataSet = qryExamName
+    left = 636
+    top = 140
+  end
+  object qryDates: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'PeopleId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DoctorId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'LocationId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end    
+      item
+        Name = 'ExamUpdated'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamUpdatedDT'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamPosted'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamPostedDT'
+        DataType = ftDateTime
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From Dates'
+    )
+    Params = <>
+    left = 628
+    top = 228
+    object qryDatesid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryDatesPeopleId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'PeopleId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesDate: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Date'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesLocationId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'LocationId'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryDatesComments: TStringField
+      DisplayWidth = 250
+      FieldKind = fkData
+      FieldName = 'Comments'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 250
+    end
+    object qryDatesDoctorId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DoctorId'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamUpdated: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'ExamUpdated'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryDatesExamUpdatedDT: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamUpdatedDT'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryDatesExamPosted: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'ExamPosted'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryDatesExamPostedDT: TDateTimeField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamPostedDT'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dtsDates: TDataSource
+    AutoEdit = False
+    DataSet = qryDates
+    left = 628
+    top = 300
+  end
+  object StandardExportFormats1: TStandardExportFormats
+    Active = True
+    left = 280
+    top = 320
+  end
+  object Exporter: TFPDataExporter
+    left = 184
+    top = 312
+  end
+  object FrPrintGrid1: TFrPrintGrid
+    DBGrid = DBGrid1
+    TitleFont.Height = -12
+    TitleFont.Name = 'Arial Narrow'
+    Caption = 'Grid'
+    ShowCaption = True
+    ShowProgress = True
+    OnGetValue = FrPrintGrid1GetValue
+    left = 88
+    top = 312
+  end
+end
