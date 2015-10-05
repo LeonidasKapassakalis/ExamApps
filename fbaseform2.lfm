@@ -1,0 +1,210 @@
+object FrmBaseForm: TFrmBaseForm
+  Left = 323
+  Height = 582
+  Top = 187
+  Width = 783
+  Caption = 'FrmBaseForm'
+  ClientHeight = 582
+  ClientWidth = 783
+  LCLVersion = '1.2.6.0'
+  object pnlMiddle: TPanel
+    Left = 0
+    Height = 459
+    Top = 50
+    Width = 783
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'pnlMiddle'
+    ClientHeight = 459
+    ClientWidth = 783
+    TabOrder = 0
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 459
+      Top = 0
+      Width = 783
+      ActivePage = TabSheet1
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 0
+      object TabSheet1: TTabSheet
+        Caption = 'TabSheet1'
+        ClientHeight = 431
+        ClientWidth = 775
+        object DBGrid1: TDBGrid
+          Left = 0
+          Height = 431
+          Top = 0
+          Width = 775
+          Align = alClient
+          AutoEdit = False
+          Color = clWindow
+          Columns = <>
+          PopupMenu = popFilter
+          TabOrder = 0
+          TitleFont.Height = -12
+          TitleFont.Name = 'Arial Narrow'
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'TabSheet2'
+      end
+      object TabSheet3: TTabSheet
+        Caption = 'TabSheet3'
+      end
+    end
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 50
+    Top = 509
+    Width = 783
+    Align = alBottom
+    Caption = 'pnlBottom'
+    TabOrder = 1
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 783
+    Align = alTop
+    Caption = 'pnlTop'
+    TabOrder = 2
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 559
+    Width = 783
+    Panels = <>
+  end
+  object ActionList1: TActionList
+    left = 56
+    top = 128
+    object actPrev: TAction
+      Category = 'ctBrowse'
+      Caption = 'actPrev'
+      ImageIndex = 7
+      ShortCut = 16464
+    end
+    object actNext: TAction
+      Category = 'ctBrowse'
+      Caption = 'actNext'
+      ImageIndex = 4
+      ShortCut = 16462
+    end
+    object actTop: TAction
+      Category = 'ctBrowse'
+      Caption = 'actTop'
+      ImageIndex = 5
+      ShortCut = 16468
+    end
+    object actBottom: TAction
+      Category = 'ctBrowse'
+      Caption = 'actBottom'
+      ImageIndex = 6
+      ShortCut = 16450
+    end
+    object actInsert: TAction
+      Category = 'ctBrowse'
+      Caption = 'actInsert'
+      ImageIndex = 1
+      ShortCut = 16429
+    end
+    object actPost: TAction
+      Category = 'ctEdit'
+      Caption = 'actPost'
+      ImageIndex = 19
+      ShortCut = 8237
+    end
+    object actCancel: TAction
+      Category = 'ctEdit'
+      Caption = 'actCancel'
+      ImageIndex = 9
+      ShortCut = 27
+    end
+    object actPrintGrid: TAction
+      Category = 'ctBrowse'
+      Caption = 'actPrintGrid'
+      ImageIndex = 20
+      ShortCut = 49232
+    end
+    object actBrowse: TAction
+      Category = 'ctBrowse'
+      Caption = 'Ενέργεις'
+    end
+    object actEdit: TAction
+      Category = 'ctEdit'
+      Caption = 'Ενέργεια'
+    end
+    object actBrowse2: TAction
+      Category = 'ctBrowse'
+      Caption = 'Μετακίνηση'
+    end
+    object actGrDet: TAction
+      Category = 'ctBrowse'
+      Caption = 'actGrDet'
+      ShortCut = 114
+    end
+    object actEdt: TAction
+      Category = 'ctBrowse'
+      Caption = 'Edit'
+      ImageIndex = 12
+    end
+    object actDelete: TAction
+      Category = 'ctBrowse'
+      Caption = 'Delete'
+      ImageIndex = 22
+    end
+    object actExport: TAction
+      Category = 'ctBrowse'
+      Caption = 'Export'
+    end
+    object actRetValue: TAction
+      Category = 'ctBrowse'
+      Caption = 'actRetValue'
+    end
+    object Action1: TAction
+      Category = 'ctBrowse'
+      Caption = 'Action1'
+    end
+    object actSave: TAction
+      Category = 'ctBrowse'
+      Caption = 'actSave'
+      ImageIndex = 8
+    end
+  end
+  object popFilter: TPopupMenu
+    left = 144
+    top = 128
+    object MenuItem15: TMenuItem
+      Caption = 'Φίλτρο'
+      OnClick = MenuItem15Click
+    end
+    object MenuItem16: TMenuItem
+      Caption = 'Ακύρωση Φίλτρου'
+    end
+    object MenuItem17: TMenuItem
+      Caption = 'Εμφανιση Φίλτρου'
+    end
+    object Pedia: TMenuItem
+      Caption = 'Πεδία'
+      object actAllColumns: TMenuItem
+        Caption = 'All'
+      end
+      object actNoneColumn: TMenuItem
+        Caption = 'None'
+      end
+      object MenuItem20: TMenuItem
+        Caption = '-'
+      end
+    end
+    object MenuItem18: TMenuItem
+      Caption = 'New Item8'
+    end
+    object MenuItem23: TMenuItem
+      Caption = 'New Item9'
+    end
+  end
+end

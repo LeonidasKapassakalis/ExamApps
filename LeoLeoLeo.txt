@@ -1,0 +1,39 @@
+object StandardExportFormats1: TStandardExportFormats
+  Active = True
+  Formats = [sefFixedLength, sefSimpleXMl, sefXMLXSD, sefSimpleJSON, sefSQL, seTeX, seRTF]
+  left = 288
+  top = 208
+end
+object Exporter: TFPDataExporter
+  Dataset = DBFData
+  left = 152
+  top = 208
+end
+
+begin
+  Exporter.Execute;
+end;
+
+procedure TMainForm.CreateNewDataset(AFileName : String);
+
+begin
+  With TDBFGenerator.Create do
+    try
+      OutputFile:=AFileName;
+      GenerateData;
+    finally
+      Free;
+    end;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDesignCaption:=Caption;
+end;
+
+procedure TMainForm.HaveData(Sender: TObject);
+begin
+  (Sender as TAction).Enabled:=DBFData.Active and Not (DBFData.EOF and DBFDATA.BOF);
+end;
+
+

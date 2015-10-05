@@ -1,0 +1,52 @@
+ FillCheckListBox(clbCustGrp, TAdoTable(AdoQuery1) , ADOQuery1LName , ADOQuery1sta_id );
+
+function FillInStrClbNoEmpty(clb:TCheckListBox):AnsiString;
+var i,x:integer;
+    c:AnsiString;
+begin
+  Result := '';
+  x:=0;
+  for i:= 0 to clb.Count - 1 do
+    begin
+      if clb.Checked[i] then
+        begin
+         c:=c+inttostr((Integer(clb.Items.Objects[i])));
+         c:=c+',';
+         inc(x);
+        end
+    end;
+//if x = clb.Count then
+//   Result := ''
+//else
+//   begin
+     SetLength(c,(Length(c)-1));
+     Result:=c;
+//   end;
+end;
+
+procedure TfrmMembersSel2.EnhmClb(LeoCb:TCheckListBox;OnOff:Boolean);
+var x:Integer;
+begin
+      for x:=0 to LeoCB.Items.Count -1 do
+          LeoCB.Checked[x]:=OnOff;
+end;
+
+procedure TfrmMembersSel2.N4Click(Sender: TObject);
+begin
+  inherited;
+	if (PopChLstBox.PopupComponent is TCheckListBox ) then
+      EnhmClb(TCheckListBox(PopChLstBox.PopupComponent),True);
+end;
+
+procedure TfrmMembersSel2.N5Click(Sender: TObject);
+begin
+  inherited;
+	if (PopChLstBox.PopupComponent is TCheckListBox ) then
+      EnhmClb(TCheckListBox(PopChLstBox.PopupComponent),False);
+end;
+
+
+
+
+
+

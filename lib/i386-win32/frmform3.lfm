@@ -1,0 +1,22 @@
+object FrmForm3: TFrmForm3
+  Left = 417
+  Height = 466
+  Top = 229
+  Width = 698
+  Caption = 'FrmForm3'
+  ClientHeight = 466
+  ClientWidth = 698
+  LCLVersion = '1.2.6.0'
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 16
+    Height = 23
+    Top = 24
+    Width = 268
+    KeyField = 'id'
+    ListField = 'Full'
+    ListFieldIndex = 0
+    ListSource = DataModule1.dtsDates1
+    LookupCache = False
+    TabOrder = 0
+  end
+end

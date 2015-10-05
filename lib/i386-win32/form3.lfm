@@ -1,0 +1,657 @@
+object FrmForm3: TFrmForm3
+  Left = 323
+  Height = 466
+  Top = 201
+  Width = 698
+  Caption = 'FrmForm3'
+  ClientHeight = 466
+  ClientWidth = 698
+  LCLVersion = '1.2.6.0'
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 16
+    Height = 23
+    Top = 24
+    Width = 456
+    KeyField = 'id'
+    ListField = 'Full'
+    ListFieldIndex = 0
+    ListSource = DataModule1.dtsDates1
+    LookupCache = False
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 64
+    Height = 104
+    Top = 64
+    Width = 568
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 496
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object DBGrid2: TDBGrid
+    Left = 72
+    Height = 104
+    Top = 184
+    Width = 568
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource2
+    TabOrder = 3
+  end
+  object DBGrid3: TDBGrid
+    Left = 64
+    Height = 104
+    Top = 296
+    Width = 568
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource3
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 609
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DatesId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'SchemaId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From DatesDetail'
+      'Where DatesId = :PDatesId'
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'PDatesId'
+        ParamType = ptInput
+      end>
+    left = 32
+    top = 72
+    object SQLQuery1id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1DatesId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DatesId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1AA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1SchemaId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'SchemaId'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    LogEvents = []
+    left = 240
+    top = 72
+  end
+  object SQLScript1: TSQLScript
+    Directives.Strings = (
+      'SET TERM'
+      'COMMIT'
+      '#IFDEF'
+      '#IFNDEF'
+      '#ELSE'
+      '#ENDIF'
+      '#DEFINE'
+      '#UNDEF'
+      '#UNDEFINE'
+    )
+    Terminator = ';'
+    CommentsinSQL = True
+    UseSetTerm = True
+    UseCommit = True
+    UseDefines = True
+    left = 352
+    top = 72
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 120
+    top = 80
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamSchemaid'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'GroupExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From ExamSchemaDet'
+      'Where ExamSchemaId = :SchemaId'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'SchemaId'
+        ParamType = ptInput
+        Size = 4
+      end>
+    DataSource = DataSource1
+    left = 32
+    top = 208
+    object SQLQuery2id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery2ExamSchemaid: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamSchemaid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery2GroupExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery2AA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    left = 96
+    top = 208
+  end
+  object DataSource3: TDataSource
+    DataSet = SQLQuery3
+    left = 88
+    top = 320
+  end
+  object SQLQuery3: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'GroupExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'AA'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From GroupExamDet'
+      'Where GroupExamId = :GroupExamId'
+      ''
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'GroupExamId'
+        ParamType = ptInput
+        Size = 4
+      end>
+    DataSource = DataSource2
+    left = 24
+    top = 320
+    object SQLQuery3id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery3GroupExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExamId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery3ExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery3AA: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'AA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object LongintField1: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkLookup
+      FieldName = 'MM_Id'
+      Index = 4
+      KeyFields = 'ExamId'
+      LookupCache = False
+      LookupDataSet = SQLQuery5
+      LookupKeyFields = 'id'
+      LookupResultField = 'MM_Id'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object SQLQuery4: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DateId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'ExamId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MMId'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_N'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Result_T'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'Updated'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From DatesExamLog'
+      'Where Id = 0'
+    )
+    Params = <>
+    left = 440
+    top = 216
+    object SQLQuery4Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery4DateId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DateId'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery4ExamId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'ExamId'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery4MMId: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MMId'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery4Result_N: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Result_N'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery4Result_T: TStringField
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'Result_T'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery4Updated: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Updated'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+  end
+  object SQLQuery5: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'SName'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'GroupExam_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MM_Id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Comments'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Min'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Max'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end>
+    Database = frmMain.SQLite3Connection1
+    Transaction = frmMain.SQLTransaction1
+    SQL.Strings = (
+      'Select * From ExamName'
+      ''
+      ''
+      ''
+    )
+    Params = <>
+    DataSource = DataSource2
+    left = 592
+    top = 216
+    object SQLQuery5id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery5Name: TStringField
+      DisplayWidth = 100
+      FieldKind = fkData
+      FieldName = 'Name'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object SQLQuery5SName: TStringField
+      DisplayWidth = 15
+      FieldKind = fkData
+      FieldName = 'SName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery5GroupExam_Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'GroupExam_Id'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery5MM_Id: TLongintField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'MM_Id'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery5Min: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Min'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery5Max: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Max'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery5Comments: TStringField
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'Comments'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+end

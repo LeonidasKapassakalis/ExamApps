@@ -1,0 +1,3604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="s21">
+      <NumberFormat ss:Format="General Date"/>
+    </Style>
+    <Style ss:ID="s22">
+      <NumberFormat ss:Format="Short Time"/>
+    </Style>
+    <Style ss:ID="s23">
+      <NumberFormat ss:Format="Short Date"/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="qryExamName">
+    <Table>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">-</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">-</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">3</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Low-density lipoprotein</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">LDL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">High-density lipoprotein</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HDL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">6</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Glucose</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Glucose</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Καρδιολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">3</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεύκωμα 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεύκωμα </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sirolimus</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sirolimus</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ng/ml</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λευκά Αιμοσφαίρια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WBC</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">11</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ερυθρά Αιμοσφαίρια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">RBC</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">M/μl
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιμοσφαιρίνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HGb</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">g/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">13</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματοκρίτης</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HCT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μέσος Όγκος ερυθρών</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MCV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">fl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">11</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μέση Περιεκτικότητα Hb./Ερυ.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MCH</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">pg</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">16</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μέση Πυκνότητα Hb</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MCHC</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">g/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">17</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Εύρος Κατανομής Ερυθρών</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">RDW</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">18</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Εύρος Κατανομής Αιμοσφ.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HDW</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">19</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιμοπετάλια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PLT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μέσος όγκος PLT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MPV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">fl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">11</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">21</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Εύρος Κατανομής Αιμοπεταλίων</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PDW</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">22</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιμοπεταλιοκρίτης</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PCT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">26</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Φωσφόρος</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PO3-</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2.5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4.5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">27</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μαγνήσιο</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Mg 2+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.6</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2.4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αλκαλική Φασφατάση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ALP</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">LDH</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">LDH</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">U/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">36</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">eGFR</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MDRD</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mL/min
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">16</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">37</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Γλυκοζυλιομένη Αιμοσφαιρήνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HbA1-c</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">38</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Όγκος Ούρων</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Όγκος Ού</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ML</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">18</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">39</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρεατινίνη Ούρων (Δείγμα)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΚρεατΟύ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">42</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ολικές Πρωτείνες (24H)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ολ.Πρωτ(2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/24H</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">17</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">43</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Παραθορμόνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PTH</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">44</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Urea</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">17</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">49</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">45</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρεατινίνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Crea</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.3</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">46</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">AST</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">SGOT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">47</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Γλυκόζη Νηστείας</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Glu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">74</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">106</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">48</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Νάτριο</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Na+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mMol/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">13</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">136</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">145</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">49</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κάλιο</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mMol/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">13</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">3.5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">5.1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">50</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ασβέστιο Ολικό</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">TCa2+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">51</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρεατινίνη Ούρων (24Η)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρεατ.Ού</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/24H</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">17</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">52</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ολικές Πρωτείνες (Δείγμα)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ολ.Πρωτ.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές 24Η</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">53</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ALT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">SGPT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Pg/mL</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">54</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">C.K.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">C.K.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">U/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">224</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουδετερόφιλα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουδετερ%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">40</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">74</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">225</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουδετερόφιλα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουδετερ#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">6.6</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">226</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεμφοκύτταρα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεμφοκ%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">19</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">48</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">227</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεμφοκύτταρα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεμφοκ#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">3.4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">228</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μονοκύτταρα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μονοκ%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">3.4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">229</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μονοκύτταρα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μονοκ#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">230</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ηωσινόφιλα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ηωσιν%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">231</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ηωσινόφιλα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ηωσιν#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">232</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βασεόφιλα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βασεό%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">233</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βασεόφιλα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βασεό#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">234</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ατυπα κύτταρα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ατυπα%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">235</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ατυπα κύτταρα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ατυπα#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">K/μl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">236</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Τοξική κοκίωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Τοξική κοκ?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">237</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βλάστες</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βλάστες</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">238</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Προμυελοκύτταρα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Προμυελοκύ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">239</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μυελοκύτταρα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μυελοκύττα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">240</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μεταμυελοκύτταρα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μεταμυελοκ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">241</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πλασματοκύτταρα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πλασματοκύ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">242</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ραβδοπ.ουδετερ.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ραβδοπ.ουδ?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">243</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΔΕΚ%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΔΕΚ%</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">244</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΔΕΚ#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΔΕΚ#</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">245</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MRV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MRV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">246</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">IRF</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">IRF</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">247</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MSCV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MSCV</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">248</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ανισοκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ανισοκυττά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">249</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροκυττά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">250</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μακροκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μακροκυττά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">251</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ποικιλοκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ποικιλοκυτ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">252</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Υποχρωμία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Υποχρωμία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">253</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Υπερχρωμία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Υπερχρωμία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">254</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ανισοχρωμία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ανισοχρωμί</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πολυχρωματοφιλία</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πολυχρωματ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">256</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Στοχοκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Στοχοκυττά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">257</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Απιοκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Απιοκυττάρ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">258</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Σχιστοκυττάρωση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Σχιστοκυττ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">259</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πυοσφαίρια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Πυοσφαίρια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">260</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ερυθρά αιμοσφαίρια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ερυθρά αιμ?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">261</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Επιθήλια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Επιθήλια</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">262</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Επιθήλια είδος</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Επιθήλια ε?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">263</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βλέννη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Βλέννη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">264</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλατα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλατα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">265</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσταλλοι</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσταλλοι</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">266</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσταλλοι Οξαλικού Ασβεστίου</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσ.Οξαλ.Α</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">267</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσταλλοι Ουρικού Οξέως</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσ.Ουρ.Οξ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">268</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύσταλλοι Εναμμων.Φωσφ.Μαγνησίου</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κρύ,Εναμ.Φω</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">269</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλινδροι υελώδεις</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλ.υελώδε?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">270</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλινδροι υελωκοκκώδεις</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλ.υελωκ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">271</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλινδροι κοκκώδεις</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Κύλ.κοκκώ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">272</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλλοι Κύλινδροι </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλλοι Κύλι?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">273</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροοργανισμοί</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροοργαν</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">274</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μύκητες</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μύκητες</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">275</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χροιά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χροιά</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">276</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Όψη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Όψη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">277</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αντίδραση(PH)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ΑντίδρασηPH</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">278</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ειδικό Βάρος</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ειδικό Βάρ?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">279</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεύκωμα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Λεύκωμα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">280</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Γλυκόζη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Γλυκόζη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">281</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Οξόνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Οξόνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">289</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολοχρωστικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολοχρωστι</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">290</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολικά Άλατα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολικά Άλα?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">291</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουροχολινογόνο</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουροχολινο</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">292</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολερυθρίνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χολερυθρίν</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">293</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Νιτρώδη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Νιτρώδη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">294</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροσκοπικά Ευρήματα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Μικροσκοπι</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">295</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αποτελέσματα Καλλιέργειας</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αποτελέσμα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">296</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλλα ευρήματα</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Άλλα ευρήμ?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρολογικές</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">_</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">100</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">297</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">γ-GT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">γ-GT</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">U/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">64</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">298</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ουρικό οξύ</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">U.A</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">3.5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">7.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">299</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Χοληστερόλη ολική</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Chol</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">140</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">200</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">300</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ολική Χολερυθρίνη</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">TBil</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.3</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">301</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Τριγλυκερίδια νηστείας</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Tg</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mg/dl</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">50</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">150</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="Number">302</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αλκαλική φωσφατάση</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ALP</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Αιματολογικές </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">U/L</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">64</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

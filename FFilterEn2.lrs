@@ -1,0 +1,20 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmFilterEn2','FORMDATA',[
+  'TPF0'#13'TfrmFilterEn2'#12'frmFilterEn2'#4'Left'#3'i'#1#6'Height'#3'`'#1#3'T'
+  +'op'#3#205#0#5'Width'#3'6'#2#11'BorderIcons'#11#12'biSystemMenu'#0#7'Caption'
+  +#6#12#206#166#206#175#206#187#207#132#207#129#206#191#12'ClientHeight'#3'`'#1
+  +#11'ClientWidth'#3'6'#2#5'Color'#7#9'clBtnFace'#10'Font.Color'#7#12'clWindow'
+  +'Text'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#8'OnCreate'#7
+  +#10'FormCreate'#10'LCLVersion'#6#7'1.2.6.0'#0#7'TBitBtn'#9'btnAccept'#4'Left'
+  +#3#177#1#6'Height'#2#26#3'Top'#3'F'#1#5'Width'#2'm'#7'Anchors'#11#7'akRight'
+  +#8'akBottom'#0#7'Caption'#6#2'OK'#4'Kind'#7#4'bkOK'#11'ModalResult'#2#1#9'Nu'
+  +'mGlyphs'#2#2#7'OnClick'#7#14'btnAcceptClick'#7'Spacing'#2#20#8'TabOrder'#2#0
+  +#0#0#11'TDataSource'#12'DataSource99'#7'DataSet'#7#12'SQLMemTable1'#4'left'#2
+  +' '#3'top'#2#16#0#0#15'TZMQueryDataSet'#12'SQLMemTable1'#9'FieldDefs'#14#0#13
+  +'QueryExecuted'#8#11'TableLoaded'#8#10'TableSaved'#8#20'DynamicFieldsCreated'
+  +#8#22'PeristentFieldsCreated'#8#19'MemoryDataSetOpened'#8#14'PersistentSave'
+  +#8#10'Parameters'#14#0#22'MasterDetailFiltration'#8#13'FilterOptions'#11#0#4
+  +'left'#2'%'#3'top'#2'Z'#0#0#10'TPopupMenu'#11'PopChLstBox'#4'left'#2'%'#3'to'
+  +'p'#3#168#0#0#0#0
+]);
